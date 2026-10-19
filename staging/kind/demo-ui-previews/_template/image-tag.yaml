@@ -1,4 +1,4 @@
-# Older podinfo than staging, so the preview visibly differs
+# Must match the chart: older images reject flags the chart passes (--prefix)
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
@@ -7,4 +7,4 @@ metadata:
 spec:
   values:
     image:
-      tag: "6.7.0"
+      tag: "6.15.0"
