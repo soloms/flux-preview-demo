@@ -1,0 +1,10 @@
+# Must match the chart: older images reject flags the chart passes (--prefix)
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: demo-ui
+  namespace: portal
+spec:
+  values:
+    image:
+      tag: "6.15.0"

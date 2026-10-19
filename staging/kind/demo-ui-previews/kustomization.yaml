@@ -1,4 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 # Active previews. Add 'pr-<n>' after copying _template; delete to remove.
-resources: []
+resources:
+  - pr-1
