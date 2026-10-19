@@ -1,0 +1,5 @@
+# Platform-owned namespace, like 'portal' in infra
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: portal

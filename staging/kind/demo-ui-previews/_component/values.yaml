@@ -1,0 +1,11 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: demo-ui
+  namespace: portal
+spec:
+  values:
+    replicaCount: 1
+    ui:
+      # First label replaced with the preview's HelmRelease name
+      message: PREVIEW.${external_domain}

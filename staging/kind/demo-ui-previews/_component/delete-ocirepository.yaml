@@ -1,0 +1,6 @@
+$patch: delete
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: demo-ui
+  namespace: portal
